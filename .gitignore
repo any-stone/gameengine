@@ -1,0 +1,10 @@
+# Mac junk
+.DS_Store
+
+# Build artifacts
+gameengine
+*.o
+*.dSYM/
+
+# Temporary folders
+temp_sol_build/
