@@ -18,6 +18,8 @@ class Game {
         void Render();
         void Destroy();
 
+        int windowWidth;
+        int windowHeight;
 };
 
 #endif
