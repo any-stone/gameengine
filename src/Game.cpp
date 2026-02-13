@@ -60,7 +60,11 @@ void Game::ProcessInput() {
         }
     }
 } 
-      
+
+void Game::Setup() {
+
+}
+
 void Game::Update() {
 
 }
@@ -69,10 +73,16 @@ void Game::Render() {
     SDL_SetRenderDrawColor(renderer, 21, 25, 35, 255);
     SDL_RenderClear(renderer);
 
+    // Draw a rectangle
+    SDL_SetRenderDrawColor(renderer, 215, 215, 215, 255);
+    SDL_Rect player = { 10, 10, 20, 20 };
+    SDL_RenderFillRect(renderer, &player);
+
     SDL_RenderPresent(renderer);
 }
 
 void Game::Run() {
+    Setup();
     while (isRunning) {
         ProcessInput();
         Update();
