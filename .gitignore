@@ -1,4 +1,5 @@
 # Mac junk
+
 .DS_Store
 
 # Build artifacts
@@ -8,3 +9,10 @@ gameengine
 
 # Temporary folders
 temp_sol_build/
+
+# Vim swap/backup files
+*.swp
+*.swo
+*.swn
+.*.swp
+.*.swo
